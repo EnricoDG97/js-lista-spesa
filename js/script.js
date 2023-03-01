@@ -17,3 +17,15 @@ const shoppingListEl = document.getElementById("shoppingList");
 const list = ["insalata", "pane", "pesce", "carne", "lievito", "pasta", "frutta"];
 // creo variabile contatore
 let counter = 0;
+
+// aggiunta ciclo while
+while (counter < list.length) {
+    // uso variabile per aggiungere i punti alla lista
+    const shoppingListItem = document.createElement("li");
+    // aggiungo append agli elementi lista per visualizzare
+    shoppingListEl.append(shoppingListItem);
+    // aggiungo gli item agli elementi lista
+    shoppingListItem.innerText = list[counter];
+    // aumento il counter
+    counter++;
+}
